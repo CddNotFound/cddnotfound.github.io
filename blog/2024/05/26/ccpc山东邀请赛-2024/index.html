@@ -1,0 +1,1283 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="kkcdd">
+      
+      
+        <link rel="canonical" href="http://kkkcdd.github.io/<kkcdd>/blog/2024/05/26/ccpc%E5%B1%B1%E4%B8%9C%E9%82%80%E8%AF%B7%E8%B5%9B-2024/">
+      
+      
+        <link rel="prev" href="../../24/icpc%E9%99%95%E8%A5%BF%E9%82%80%E8%AF%B7%E8%B5%9B-2024-%E4%B8%AA%E4%BA%BA%E9%A2%98%E8%A7%A3/">
+      
+      
+        <link rel="next" href="../../31/educational-codeforces-round-166-rated-for-div-2-a--d/">
+      
+      
+      <link rel="icon" href="../../../../../images/dn.jpeg">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>CCPC山东邀请赛 2024 - 杂物间</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.bcfcd587.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1 7.775V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.752 1.752 0 0 1 1 7.775Zm1.5 0c0 .066.026.13.073.177l6.25 6.25a.25.25 0 0 0 .354 0l5.025-5.025a.25.25 0 0 0 0-.354l-6.25-6.25a.25.25 0 0 0-.177-.073H2.75a.25.25 0 0 0-.25.25ZM6 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"/></svg>');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.5 1.75v11.5c0 .138.112.25.25.25h3.17a.75.75 0 0 1 0 1.5H2.75A1.75 1.75 0 0 1 1 13.25V1.75C1 .784 1.784 0 2.75 0h8.5C12.216 0 13 .784 13 1.75v7.736a.75.75 0 0 1-1.5 0V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13.274 9.537v-.001l-4.557 4.45a.75.75 0 0 1-1.055-.008l-1.943-1.95a.75.75 0 0 1 1.062-1.058l1.419 1.425 4.026-3.932a.75.75 0 1 1 1.048 1.074ZM4.75 4h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM4 7.75A.75.75 0 0 1 4.75 7h2a.75.75 0 0 1 0 1.5h-2A.75.75 0 0 1 4 7.75Z"/></svg>');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/></svg>');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.499.75a.75.75 0 0 1 1.5 0v.996C5.9 2.903 6.793 3.65 7.662 4.376l.24.202c-.036-.694.055-1.422.426-2.163C9.1.873 10.794-.045 12.622.26 14.408.558 16 1.94 16 4.25c0 1.278-.954 2.575-2.44 2.734l.146.508.065.22c.203.701.412 1.455.476 2.226.142 1.707-.4 3.03-1.487 3.898C11.714 14.671 10.27 15 8.75 15h-6a.75.75 0 0 1 0-1.5h1.376a4.484 4.484 0 0 1-.563-1.191 3.835 3.835 0 0 1-.05-2.063 4.647 4.647 0 0 1-2.025-.293.75.75 0 0 1 .525-1.406c1.357.507 2.376-.006 2.698-.318l.009-.01a.747.747 0 0 1 1.06 0 .748.748 0 0 1-.012 1.074c-.912.92-.992 1.835-.768 2.586.221.74.745 1.337 1.196 1.621H8.75c1.343 0 2.398-.296 3.074-.836.635-.507 1.036-1.31.928-2.602-.05-.603-.216-1.224-.422-1.93l-.064-.221c-.12-.407-.246-.84-.353-1.29a2.425 2.425 0 0 1-.507-.441 3.075 3.075 0 0 1-.633-1.248.75.75 0 0 1 1.455-.364c.046.185.144.436.31.627.146.168.353.305.712.305.738 0 1.25-.615 1.25-1.25 0-1.47-.95-2.315-2.123-2.51-1.172-.196-2.227.387-2.706 1.345-.46.92-.27 1.774.019 3.062l.042.19a.884.884 0 0 1 .01.05c.348.443.666.949.94 1.553a.75.75 0 1 1-1.365.62c-.553-1.217-1.32-1.94-2.3-2.768L6.7 5.527c-.814-.68-1.75-1.462-2.692-2.619a3.737 3.737 0 0 0-1.023.88c-.406.495-.663 1.036-.722 1.508.116.122.306.21.591.239.388.038.797-.06 1.032-.19a.75.75 0 0 1 .728 1.31c-.515.287-1.23.439-1.906.373-.682-.067-1.473-.38-1.879-1.193L.75 5.677V5.5c0-.984.48-1.94 1.077-2.664.46-.559 1.05-1.055 1.673-1.353V.75Z"/></svg>');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"/></svg>');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.92 6.085h.001a.749.749 0 1 1-1.342-.67c.169-.339.436-.701.849-.977C6.845 4.16 7.369 4 8 4a2.756 2.756 0 0 1 1.637.525c.503.377.863.965.863 1.725 0 .448-.115.83-.329 1.15-.205.307-.47.513-.692.662-.109.072-.22.138-.313.195l-.006.004a6.24 6.24 0 0 0-.26.16.952.952 0 0 0-.276.245.75.75 0 0 1-1.248-.832c.184-.264.42-.489.692-.661.103-.067.207-.132.313-.195l.007-.004c.1-.061.182-.11.258-.161a.969.969 0 0 0 .277-.245C8.96 6.514 9 6.427 9 6.25a.612.612 0 0 0-.262-.525A1.27 1.27 0 0 0 8 5.5c-.369 0-.595.09-.74.187a1.01 1.01 0 0 0-.34.398ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg>');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg>');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.344 2.343h-.001a8 8 0 0 1 11.314 11.314A8.002 8.002 0 0 1 .234 10.089a8 8 0 0 1 2.11-7.746Zm1.06 10.253a6.5 6.5 0 1 0 9.108-9.275 6.5 6.5 0 0 0-9.108 9.275ZM6.03 4.97 8 6.94l1.97-1.97a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l1.97 1.97a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-1.97 1.97a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L6.94 8 4.97 6.03a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018Z"/></svg>');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M9.504.43a1.516 1.516 0 0 1 2.437 1.713L10.415 5.5h2.123c1.57 0 2.346 1.909 1.22 3.004l-7.34 7.142a1.249 1.249 0 0 1-.871.354h-.302a1.25 1.25 0 0 1-1.157-1.723L5.633 10.5H3.462c-1.57 0-2.346-1.909-1.22-3.004L9.503.429Zm1.047 1.074L3.286 8.571A.25.25 0 0 0 3.462 9H6.75a.75.75 0 0 1 .694 1.034l-1.713 4.188 6.982-6.793A.25.25 0 0 0 12.538 7H9.25a.75.75 0 0 1-.683-1.06l2.008-4.418.003-.006a.036.036 0 0 0-.004-.009l-.006-.006-.008-.001c-.003 0-.006.002-.009.004Z"/></svg>');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4.72.22a.75.75 0 0 1 1.06 0l1 .999a3.488 3.488 0 0 1 2.441 0l.999-1a.748.748 0 0 1 1.265.332.75.75 0 0 1-.205.729l-.775.776c.616.63.995 1.493.995 2.444v.327c0 .1-.009.197-.025.292.408.14.764.392 1.029.722l1.968-.787a.75.75 0 0 1 .556 1.392L13 7.258V9h2.25a.75.75 0 0 1 0 1.5H13v.5c0 .409-.049.806-.141 1.186l2.17.868a.75.75 0 0 1-.557 1.392l-2.184-.873A4.997 4.997 0 0 1 8 16a4.997 4.997 0 0 1-4.288-2.427l-2.183.873a.75.75 0 0 1-.558-1.392l2.17-.868A5.036 5.036 0 0 1 3 11v-.5H.75a.75.75 0 0 1 0-1.5H3V7.258L.971 6.446a.75.75 0 0 1 .558-1.392l1.967.787c.265-.33.62-.583 1.03-.722a1.677 1.677 0 0 1-.026-.292V4.5c0-.951.38-1.814.995-2.444L4.72 1.28a.75.75 0 0 1 0-1.06Zm.53 6.28a.75.75 0 0 0-.75.75V11a3.5 3.5 0 1 0 7 0V7.25a.75.75 0 0 0-.75-.75ZM6.173 5h3.654A.172.172 0 0 0 10 4.827V4.5a2 2 0 1 0-4 0v.327c0 .096.077.173.173.173Z"/></svg>');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M5 5.782V2.5h-.25a.75.75 0 0 1 0-1.5h6.5a.75.75 0 0 1 0 1.5H11v3.282l3.666 5.76C15.619 13.04 14.543 15 12.767 15H3.233c-1.776 0-2.852-1.96-1.899-3.458Zm-2.4 6.565a.75.75 0 0 0 .633 1.153h9.534a.75.75 0 0 0 .633-1.153L12.225 10.5h-8.45ZM9.5 2.5h-3V6c0 .143-.04.283-.117.403L4.73 9h6.54L9.617 6.403A.746.746 0 0 1 9.5 6Z"/></svg>');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1.75 2.5h10.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5Zm4 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5Zm0 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5ZM2.5 7.75v6a.75.75 0 0 1-1.5 0v-6a.75.75 0 0 1 1.5 0Z"/></svg>');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CUbuntu+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Ubuntu Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../stylesheets/test.css">
+    
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../../../.." title="杂物间" class="md-header__button md-logo" aria-label="杂物间" data-md-component="logo">
+      
+  <img src="../../../../../assets/star.jpeg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            杂物间
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              CCPC山东邀请赛 2024
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../.." class="md-tabs__link">
+        
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../../docs/board/data_structure/" class="md-tabs__link">
+          
+  
+    
+  
+  OI模板
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../../" class="md-tabs__link">
+          
+  
+    
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../archive/2024" class="md-tabs__link">
+        
+  
+    
+  
+  归档
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../category/acm" class="md-tabs__link">
+        
+  
+    
+  
+  分类
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../.." title="杂物间" class="md-nav__button md-logo" aria-label="杂物间" data-md-component="logo">
+      
+  <img src="../../../../../assets/star.jpeg" alt="logo">
+
+    </a>
+    杂物间
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    OI模板
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            OI模板
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../docs/board/data_structure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数据结构
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../docs/board/graph_theory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    图论
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../docs/board/math/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数学
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../docs/board/string/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    字符串
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    归档
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            归档
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../archive/2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../archive/2023/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2023
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    分类
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            分类
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../category/acm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ACM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../category/atc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Atc
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../category/cf/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CF
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../category/%E6%80%BB%E7%BB%93/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    总结
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../category/%E6%B8%B8%E8%AE%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    游记
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../archive/2024" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    归档
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../category/acm" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    分类
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      游记
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="游记">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#preface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preface
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#day-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Day -1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#day-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      Day 0
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#day-1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Day 1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      题解
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="题解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-printer" class="md-nav__link">
+    <span class="md-ellipsis">
+      A - Printer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-hero-of-the-kingdom" class="md-nav__link">
+    <span class="md-ellipsis">
+      D - Hero of the Kingdom
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-sensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      E - Sensors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-divide-the-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      F - Divide the Sequence
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#h-stop-the-castle" class="md-nav__link">
+    <span class="md-ellipsis">
+      H - Stop the Castle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-left-shifting" class="md-nav__link">
+    <span class="md-ellipsis">
+      I - Left Shifting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#j-colorful-spanning-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      J - Colorful Spanning Tree
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#k-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      K - Matrix
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m-palindromic-polygon" class="md-nav__link">
+    <span class="md-ellipsis">
+      M - Palindromic Polygon
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../../" class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+                  <span class="md-ellipsis">
+                    回到主页
+                  </span>
+                </a>
+              </div>
+            </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    元数据
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5v-5Z"/></svg>
+                        <time datetime="2024-05-26 00:00:00" class="md-ellipsis">2024年5月26日</time>
+                      </div>
+                    </li>
+                    
+                    
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3H9m3 2 4 13 3-1-4-13-3 1M5 5v13h3V5H5M3 19v2h18v-2H3Z"/></svg>
+                          <span class="md-ellipsis">
+                            分类于
+                            
+                              <a href="../../../../category/%E6%B8%B8%E8%AE%B0/">游记</a>, 
+                              <a href="../../../../category/%E6%80%BB%E7%BB%93/">总结</a>, 
+                              <a href="../../../../category/acm/">ACM</a></span>
+                        </div>
+                      </li>
+                    
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+          </nav>
+          
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+
+
+  <h1>CCPC山东邀请赛 2024</h1>
+
+<p>最战犯的一集</p>
+<!-- more -->
+
+<!-- more-->
+
+<h2 id="_1">游记</h2>
+<h3 id="preface">Preface</h3>
+<p>济南好凉快，喜欢这个温度</p>
+<h3 id="day-1">Day -1</h3>
+<p>下午到的济南，然后是去酒店、吃晚饭，还去附近的麦门买了俩麦旋风。</p>
+<p>回酒店打会游戏就睡觉了</p>
+<h3 id="day-0">Day 0</h3>
+<p>早上在写雅思听力，晚上在写大物作业，怎么会事呢（</p>
+<p>山大好排面，好大的会展中心，人也好多，四点的时候排队签到还有好多人</p>
+<p>一开始显示器角度不对，稍微用点力发现拧不过来，问完志愿者发现就是大力出奇迹，离谱捏</p>
+<p>电脑也挺古董的，i5-5300U + 8G，编译一个万能头要十秒，光OMS就占了50%的CPU，不过还好第二天正赛的时候没这么卡，处于一个能用的状态。</p>
+<p>热身赛象征性地签了一下 <code>A</code> ，然后 <code>B</code> 一眼暴力不想写， <code>C</code> 惊现校赛原题， <code>D</code> 是去年原题，于是就有正当理由摸鱼了（</p>
+<p>但是感觉 <code>pta</code> 用起来好难受，据说明年不用了，好耶</p>
+<p>签完到就回酒店了，晚上去了附近的城南往事，炫了大半条黄金鲤鱼（调的太甜了受不了，主要是脆脆的口感好。</p>
+<p>还买了dq 。冰淇淋，爽！</p>
+<h3 id="day-1_1">Day 1</h3>
+<p>晚上睡的有点晚，醒的时候都 7:50 了。虽然理论上赶得上，但是因为把开幕式时间记成 8:20 就继续睡觉了，最后在 9:10 到的考场</p>
+<p><strong>接下来是赛时部分</strong>：</p>
+<p>xgg比赛前瞄到气球区 <code>ABD</code> 的气球特别多，于是开场策略变成 <code>ABD</code> 一人一题</p>
+<p>然后 xgg 秒了 <code>D</code> ，T了</p>
+<p>wk看 <code>B</code> 有思路，但是找不到板子</p>
+<p>我看 <code>A</code> 也秒了，但是 mid 没开 long long 爆一发，check 没注意会爆 long long 再爆一发，开局战犯贡献两次罚时</p>
+<p>然后被队友喂了 <code>K</code> 的题意，在注意到与四元组同行或者同列的元素一定相等后，随便搓了几个构造方案就找到正解了，什么时候打cf的构造题思路也能这么通畅（</p>
+<p>接着两个队友在看 <code>F</code> ，我去看了下 <code>M</code> ，发现没思路，然后把其他题的题意基本都过了一遍。这个时候他俩讨论出来贪心，然后很快 <code>A</code> 了。</p>
+<p>然后他俩回头弄 <code>C</code> 了，我在看 <code>J</code> ，发现就是最小生成树模板，然后等 <code>C</code> 过了光速上机 A 了，这个时候2h，过了六题</p>
+<p>因为昨天没休息好这个时候就有点大脑宕机的感觉了，眼睛很累想睡觉，处于一种几乎无法思考的状态。这个时候他俩回去调 <code>D</code> 了，而我就几乎处于一种没用贡献的状态。然后吃了个饭上了下厕所好了点就去看 <code>H</code> 了。</p>
+<p><code>H</code> 题目看完当时的想法是，找个算法维护一下情况：</p>
+<p><span class="arithmatex">\(n\)</span> 个选择，每个选择满足 <span class="arithmatex">\(2\)</span> 个条件，问满足 <span class="arithmatex">\(m\)</span> 个条件最少需要多少个选择。</p>
+<p>当时想了 <code>2-SAT</code> 和 <code>二分匹配</code> 感觉都不太对劲，然后怎么想都想不出来。直到队友调完 <code>D</code> 再次提出二分图才发现是对的，求个最大匹配然后用总节点数减去就行了。期间还贡献了一发错的做法，还好及时被hack了，不然战犯等级++</p>
+<p>然后 wk 上机搓 <code>H</code> ，差不多从 3h 开始一直写到 4.5h，貌似读错了两次题。不过还是有惊无险的 2try A了。比较战犯的是我造了三个数据有一个答案还弄错了，差点又把队友带偏，还好答案差的有点多及时意识到数据有问题。</p>
+<p>写 <code>H</code> 期间我和 xgg 看了看 <code>E</code> ，但是完全没思路。然后刚封榜的时候突然意识到这次好像还没有 <code>dp</code> ，然后再回头看 <code>M</code> 的时候发现区间 <code>dp</code> 能秒，和 xgg 简单讲了下思路，应该是没问题的。（不过感觉他这个时候已经是下班状态了，能感觉到我说完大概率是没弄懂的，虽说应该主要是因为我表达能力比较含糊</p>
+<p>然后 4.5h <code>H</code> 过了之后直接上机开搓，大概20min写完初稿，这个时候比较弱智的地方就是算四边形面积划分的三角形编号弄错了，一直到最后都没看出来。中途后面有队突然欢呼大叫还给我吓一跳。等赛后把这个改了，然后把海伦公式改成叉乘就过了（样例），和9题rk10失之交臂</p>
+<p>其实这场总结一下几乎没什么贡献，唯一的可能是 <code>K</code> 开的比较快，过的 <code>A</code> 跟 <code>J</code> 都是水题，虽说 <code>F</code>  和 <code>H</code> 也贡献了一点点思路，唯一可能高光一下的 dp 还死在弱智错误上了。中场整个人思路都是停滞的，跟省赛一模一样。</p>
+<p>短期内没什么比赛了，接下来就多练练吧，争取以后不当战犯了。</p>
+<h2 id="_2">题解</h2>
+<p>我悟了，这里应该直接放跳转链接的</p>
+<p>游记里干嘛放大篇的题解</p>
+<details class="note">
+<summary><a href="../../../06/09/ccpc%E5%B1%B1%E4%B8%9C%E9%82%80%E8%AF%B7%E8%B5%9B-2024-%E4%B8%AA%E4%BA%BA%E9%A2%98%E8%A7%A3/">CCPC山东邀请赛 2024 个人题解</a></summary>
+<p>详细代码请跳转:D</p>
+<h3 id="a-printer"><a href="https://codeforces.com/gym/526653/problem/A">A - Printer</a></h3>
+<p>二分</p>
+<p>注意 check 函数里面计算 s 的时候可能会爆 <code>long long</code> ，要及时退出</p>
+<h3 id="d-hero-of-the-kingdom"><a href="https://codeforces.com/gym/526653/problem/D">D - Hero of the Kingdom</a></h3>
+<p>搬运 <span class="arithmatex">\(x\)</span> 袋面粉需要的时间 <span class="arithmatex">\(t = (a + c)x + (b + d)\)</span> ，需要花费的金币 <span class="arithmatex">\(s = px\)</span> ，赚到的利润是 <span class="arithmatex">\((q - p)x\)</span> </p>
+<p>一个模拟的思路就是根据金币数和剩余时间计算出最多能搬运多少袋面粉，一直重复直到一袋面粉都运不了</p>
+<p>但是会超时，仔细想一下会发现当卖一袋面粉收入太少，就会导致多次卖相同数量的面粉，所以如果两次卖的面粉数量相同，我们可以计算出最少还要卖多少次才能使下次卖的面粉数量增加，这样对每一数量的面粉我们最多会卖两次，因为卖一袋面粉的时间最少是 <span class="arithmatex">\(2\)</span> ，所以最坏情况下需要卖的次数 <span class="arithmatex">\(k\)</span> 满足 <span class="arithmatex">\(\Sigma_{i = 1}^k 2\times2i \geq t\)</span> ，差不多是 <span class="arithmatex">\(O(\sqrt{t})\)</span> 的复杂度</p>
+<h3 id="e-sensors"><a href="https://codeforces.com/gym/526653/problem/E">E - Sensors</a></h3>
+<p>一个观测区间只会在蓝色球变成一球和零球时对答案产生贡献，这种问题很重要的地方就是如何判断每次操作使哪些区间产生了上述变化，这里可以考虑线段树</p>
+<p>我们把每个观测区间挂到线段树对应的节点上，这样最多会被分成 <span class="arithmatex">\(logn\)</span> 段，当一个线段树区间上蓝色球的数量变成 <span class="arithmatex">\(1\)</span> 时，说明挂在上面的区间有可能进入一个蓝色球的状态，就去更新这些区间的状态，看会不会对答案产生贡献。当一个线段树区间变成 <span class="arithmatex">\(0\)</span> 时，说明上面的区间有可能进入零球状态，也可能是一球，也挨个更新状态。</p>
+<p>这样每个区间最多只会被更新 <span class="arithmatex">\(2logn\)</span> 次，时间复杂度 <span class="arithmatex">\(O(nlogn)\)</span></p>
+<h3 id="f-divide-the-sequence"><a href="https://codeforces.com/gym/526653/problem/F">F - Divide the Sequence</a></h3>
+<p>当 <span class="arithmatex">\(k = n\)</span> 时，答案为 <span class="arithmatex">\(\Sigma i \times a_i\)</span></p>
+<p>如果要合并某两个区间，对答案的贡献就是减去一次到第二个区间的后缀和，且到每个区间的后缀和仅会被计算一次</p>
+<p>那么贪心地考虑就是每次找出最小后缀和合并，排个序就行了</p>
+<h3 id="h-stop-the-castle"><a href="https://codeforces.com/gym/526653/problem/H">H - Stop the Castle</a></h3>
+<p>就给下思路吧，我实在不想调这个题（</p>
+<p>对能互相攻击到的车连线并编号，对于相交的两条连线，在对应的两条边编号建边，最后跑二分图匹配即可</p>
+<p>匹配到的边就是取对应的连线交点，没有匹配的在连线上任取一点即可</p>
+<p>思路很简单吧，接下来来码一下叭:P</p>
+<h3 id="i-left-shifting"><a href="https://codeforces.com/gym/526653/problem/I">I - Left Shifting</a></h3>
+<p>签到</p>
+<p>模拟扫一遍</p>
+<h3 id="j-colorful-spanning-tree"><a href="https://codeforces.com/gym/526653/problem/J">J - Colorful Spanning Tree</a></h3>
+<p>要让每个点都相连，对于每种颜色的点至少有一个会和其他颜色的点相连，这些点就可以构成一棵最小生成树，剩下的点取最小权值往上连就好了</p>
+<h3 id="k-matrix"><a href="https://codeforces.com/gym/526653/problem/K">K - Matrix</a></h3>
+<p>简单小构造</p>
+<p>首先互不相同的那个四个位置，对应的同列或者同行的两个位置一定是相同的，就可以取四个数塞到角落，剩下同行同列的位置从 <span class="arithmatex">\(1\)</span> 到 <span class="arithmatex">\(2n - 4\)</span> 每个塞两个。</p>
+<p>这个时候还剩下一个 <span class="arithmatex">\((n - 2) \times (n - 2)\)</span> 的矩阵，把前 <span class="arithmatex">\(n - 2\)</span> 行的延伸过来就行了。</p>
+<p>这样当 <span class="arithmatex">\(1 \leq a \leq n - 2\)</span> 时，因为这一行都相等，四元组一定不符合条件</p>
+<p>当 <span class="arithmatex">\(a = n - 1\)</span> 时，如果 <span class="arithmatex">\(c \leq n - 2\)</span> ，这列最后两个值相同，也不符合条件</p>
+<p>唯一满足的四个数是角落的四个，符合题意。</p>
+<p>实际如下：</p>
+<div class="arithmatex">\[
+\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; \cdots &amp; 1 &amp; 1 &amp; 1 \\
+2 &amp; 2 &amp; 2 &amp; \cdots &amp; 2 &amp; 2 &amp; 2 \\
+3 &amp; 3 &amp; 3 &amp; \cdots &amp; 3 &amp; 3 &amp; 3 \\
+\vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots &amp; \vdots \\
+n - 2 &amp; n - 2 &amp; n - 2 &amp; \cdots &amp; n - 2 &amp; n - 2 &amp; n - 2 \\
+n - 1 &amp; n &amp; n + 1 &amp; \cdots &amp; 2n - 4 &amp; 2n - 3 &amp; 2n - 2\\ 
+n - 1 &amp; n &amp; n + 1 &amp; \cdots &amp; 2n - 4 &amp; 2n - 1 &amp; 2n\\
+\end{bmatrix}
+\]</div>
+<p>我也不知道我为什么要用矩阵写，可能为了练练 <code>Latex</code> 把（</p>
+<h3 id="m-palindromic-polygon"><a href="https://codeforces.com/gym/526653/problem/M">M - Palindromic Polygon</a></h3>
+<p>区间dp</p>
+<p>先把环展开为长度 <span class="arithmatex">\(2n\)</span> 的链，然后令 <span class="arithmatex">\(f_{i, j}\)</span> 表示从第 <span class="arithmatex">\(i\)</span> 个点取到第 <span class="arithmatex">\(j\)</span> 个点围成的最大面积（需要满足 <span class="arithmatex">\(i,j\)</span> 为 回文串的一部分）</p>
+<p>然后就是按长度枚举区间，对于每个区间 <span class="arithmatex">\([i, j]\)</span> ，枚举 <span class="arithmatex">\(i\)</span> 左边的所有点，并找到 <span class="arithmatex">\(j\)</span> 后面第一个对应的相同权值相同的点，从 <span class="arithmatex">\([i, j]\)</span> 向新的区间转移，然后再枚举一下 <span class="arithmatex">\(j\)</span> 右边的点，时间复杂度 <span class="arithmatex">\(O(n^3)\)</span> </p>
+<p><span class="arithmatex">\(ans\)</span> 取计算过程中的最大值</p>
+<p>珍爱生命，远离海伦公式</p>
+</details>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/kkkcdd" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.tabs", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.tracking", "navigation.sections", "toc.follow", "navigation.indexes"], "search": "../../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../../../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+      
+        <script src="../../../../../javascripts/mathjax.js"></script>
+      
+    
+  </body>
+</html>
