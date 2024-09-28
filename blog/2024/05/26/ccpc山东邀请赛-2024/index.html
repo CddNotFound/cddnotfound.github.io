@@ -206,7 +206,7 @@
   
     
   
-  OI模板
+  自用模板
 
         </a>
       </li>
@@ -360,7 +360,7 @@
             
   
   <span class="md-ellipsis">
-    OI模板
+    自用模板
   </span>
   
 
@@ -370,7 +370,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            OI模板
+            自用模板
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1080,7 +1080,6 @@
                             分类于
                             
                               <a href="../../../../category/%E6%B8%B8%E8%AE%B0/">游记</a>, 
-                              <a href="../../../../category/%E6%80%BB%E7%BB%93/">总结</a>, 
                               <a href="../../../../category/acm/">ACM</a></span>
                         </div>
                       </li>
@@ -1102,10 +1101,7 @@
 
   <h1>CCPC山东邀请赛 2024</h1>
 
-<p>最战犯的一集</p>
 <!-- more -->
-
-<!-- more-->
 
 <h2 id="_1">游记</h2>
 <h3 id="preface">Preface</h3>
@@ -1119,31 +1115,19 @@
 <p>一开始显示器角度不对，稍微用点力发现拧不过来，问完志愿者发现就是大力出奇迹，离谱捏</p>
 <p>电脑也挺古董的，i5-5300U + 8G，编译一个万能头要十秒，光OMS就占了50%的CPU，不过还好第二天正赛的时候没这么卡，处于一个能用的状态。</p>
 <p>热身赛象征性地签了一下 <code>A</code> ，然后 <code>B</code> 一眼暴力不想写， <code>C</code> 惊现校赛原题， <code>D</code> 是去年原题，于是就有正当理由摸鱼了（</p>
-<p>但是感觉 <code>pta</code> 用起来好难受，据说明年不用了，好耶</p>
+<p>但是感觉 <code>OMS</code> 用起来好难受，据说明年不用了，好耶</p>
 <p>签完到就回酒店了，晚上去了附近的城南往事，炫了大半条黄金鲤鱼（调的太甜了受不了，主要是脆脆的口感好。</p>
 <p>还买了dq 。冰淇淋，爽！</p>
 <h3 id="day-1_1">Day 1</h3>
 <p>晚上睡的有点晚，醒的时候都 7:50 了。虽然理论上赶得上，但是因为把开幕式时间记成 8:20 就继续睡觉了，最后在 9:10 到的考场</p>
-<p><strong>接下来是赛时部分</strong>：</p>
-<p>xgg比赛前瞄到气球区 <code>ABD</code> 的气球特别多，于是开场策略变成 <code>ABD</code> 一人一题</p>
-<p>然后 xgg 秒了 <code>D</code> ，T了</p>
-<p>wk看 <code>B</code> 有思路，但是找不到板子</p>
-<p>我看 <code>A</code> 也秒了，但是 mid 没开 long long 爆一发，check 没注意会爆 long long 再爆一发，开局战犯贡献两次罚时</p>
-<p>然后被队友喂了 <code>K</code> 的题意，在注意到与四元组同行或者同列的元素一定相等后，随便搓了几个构造方案就找到正解了，什么时候打cf的构造题思路也能这么通畅（</p>
-<p>接着两个队友在看 <code>F</code> ，我去看了下 <code>M</code> ，发现没思路，然后把其他题的题意基本都过了一遍。这个时候他俩讨论出来贪心，然后很快 <code>A</code> 了。</p>
-<p>然后他俩回头弄 <code>C</code> 了，我在看 <code>J</code> ，发现就是最小生成树模板，然后等 <code>C</code> 过了光速上机 A 了，这个时候2h，过了六题</p>
-<p>因为昨天没休息好这个时候就有点大脑宕机的感觉了，眼睛很累想睡觉，处于一种几乎无法思考的状态。这个时候他俩回去调 <code>D</code> 了，而我就几乎处于一种没用贡献的状态。然后吃了个饭上了下厕所好了点就去看 <code>H</code> 了。</p>
-<p><code>H</code> 题目看完当时的想法是，找个算法维护一下情况：</p>
-<p><span class="arithmatex">\(n\)</span> 个选择，每个选择满足 <span class="arithmatex">\(2\)</span> 个条件，问满足 <span class="arithmatex">\(m\)</span> 个条件最少需要多少个选择。</p>
-<p>当时想了 <code>2-SAT</code> 和 <code>二分匹配</code> 感觉都不太对劲，然后怎么想都想不出来。直到队友调完 <code>D</code> 再次提出二分图才发现是对的，求个最大匹配然后用总节点数减去就行了。期间还贡献了一发错的做法，还好及时被hack了，不然战犯等级++</p>
-<p>然后 wk 上机搓 <code>H</code> ，差不多从 3h 开始一直写到 4.5h，貌似读错了两次题。不过还是有惊无险的 2try A了。比较战犯的是我造了三个数据有一个答案还弄错了，差点又把队友带偏，还好答案差的有点多及时意识到数据有问题。</p>
-<p>写 <code>H</code> 期间我和 xgg 看了看 <code>E</code> ，但是完全没思路。然后刚封榜的时候突然意识到这次好像还没有 <code>dp</code> ，然后再回头看 <code>M</code> 的时候发现区间 <code>dp</code> 能秒，和 xgg 简单讲了下思路，应该是没问题的。（不过感觉他这个时候已经是下班状态了，能感觉到我说完大概率是没弄懂的，虽说应该主要是因为我表达能力比较含糊</p>
-<p>然后 4.5h <code>H</code> 过了之后直接上机开搓，大概20min写完初稿，这个时候比较弱智的地方就是算四边形面积划分的三角形编号弄错了，一直到最后都没看出来。中途后面有队突然欢呼大叫还给我吓一跳。等赛后把这个改了，然后把海伦公式改成叉乘就过了（样例），和9题rk10失之交臂</p>
-<p>其实这场总结一下几乎没什么贡献，唯一的可能是 <code>K</code> 开的比较快，过的 <code>A</code> 跟 <code>J</code> 都是水题，虽说 <code>F</code>  和 <code>H</code> 也贡献了一点点思路，唯一可能高光一下的 dp 还死在弱智错误上了。中场整个人思路都是停滞的，跟省赛一模一样。</p>
-<p>短期内没什么比赛了，接下来就多练练吧，争取以后不当战犯了。</p>
+<p>但是依旧很困，中间写完那个最小生成树眼睛又干又涩直接进入注意力涣散状态（</p>
+<p>最后半小时写 M 也没写完，评价是珍爱生命，远离海伦公式。（要是想起来有叉乘就能过 9 题差不多rk10了</p>
+<p>记得开赛前xgg比赛前瞄到气球区 <code>ABD</code> 的气球特别多，于是开场策略变成 <code>ABD</code> 一人一题</p>
+<p>结果是 D 开局 T 掉， A mid 没开 long long + check 没注意爆 long long 连 WA 两次，B 据说有思路但是找不到板子（悲</p>
+<p>晚上去了ktv，但是 声音不好听+社恐属性 导致在沙发上瘫了三个小时一首没唱，我也是怪搞笑的（</p>
 <h2 id="_2">题解</h2>
 <p>我悟了，这里应该直接放跳转链接的</p>
-<p>游记里干嘛放大篇的题解</p>
+<p>游记里干嘛放大篇的题解（</p>
 <details class="note">
 <summary><a href="../../../06/09/ccpc%E5%B1%B1%E4%B8%9C%E9%82%80%E8%AF%B7%E8%B5%9B-2024-%E4%B8%AA%E4%BA%BA%E9%A2%98%E8%A7%A3/">CCPC山东邀请赛 2024 个人题解</a></summary>
 <p>详细代码请跳转:D</p>
@@ -1151,15 +1135,15 @@
 <p>二分</p>
 <p>注意 check 函数里面计算 s 的时候可能会爆 <code>long long</code> ，要及时退出</p>
 <h3 id="d-hero-of-the-kingdom"><a href="https://codeforces.com/gym/526653/problem/D">D - Hero of the Kingdom</a></h3>
-<p>搬运 <span class="arithmatex">\(x\)</span> 袋面粉需要的时间 <span class="arithmatex">\(t = (a + c)x + (b + d)\)</span> ，需要花费的金币 <span class="arithmatex">\(s = px\)</span> ，赚到的利润是 <span class="arithmatex">\((q - p)x\)</span> </p>
+<p>搬运 x 袋面粉需要的时间 t = (a + c)x + (b + d) ，需要花费的金币 s = px ，赚到的利润是 (q - p)x</p>
 <p>一个模拟的思路就是根据金币数和剩余时间计算出最多能搬运多少袋面粉，一直重复直到一袋面粉都运不了</p>
-<p>但是会超时，仔细想一下会发现当卖一袋面粉收入太少，就会导致多次卖相同数量的面粉，所以如果两次卖的面粉数量相同，我们可以计算出最少还要卖多少次才能使下次卖的面粉数量增加，这样对每一数量的面粉我们最多会卖两次，因为卖一袋面粉的时间最少是 <span class="arithmatex">\(2\)</span> ，所以最坏情况下需要卖的次数 <span class="arithmatex">\(k\)</span> 满足 <span class="arithmatex">\(\Sigma_{i = 1}^k 2\times2i \geq t\)</span> ，差不多是 <span class="arithmatex">\(O(\sqrt{t})\)</span> 的复杂度</p>
+<p>但是会超时，仔细想一下会发现当卖一袋面粉收入太少，就会导致多次卖相同数量的面粉，所以如果两次卖的面粉数量相同，我们可以计算出最少还要卖多少次才能使下次卖的面粉数量增加，这样对每一数量的面粉我们最多会卖两次，因为卖一袋面粉的时间最少是 2 ，所以最坏情况下需要卖的次数 k 满足 \Sigma_{i = 1}^k 2\times2i \geq t ，差不多是 O(\sqrt{t}) 的复杂度</p>
 <h3 id="e-sensors"><a href="https://codeforces.com/gym/526653/problem/E">E - Sensors</a></h3>
 <p>一个观测区间只会在蓝色球变成一球和零球时对答案产生贡献，这种问题很重要的地方就是如何判断每次操作使哪些区间产生了上述变化，这里可以考虑线段树</p>
-<p>我们把每个观测区间挂到线段树对应的节点上，这样最多会被分成 <span class="arithmatex">\(logn\)</span> 段，当一个线段树区间上蓝色球的数量变成 <span class="arithmatex">\(1\)</span> 时，说明挂在上面的区间有可能进入一个蓝色球的状态，就去更新这些区间的状态，看会不会对答案产生贡献。当一个线段树区间变成 <span class="arithmatex">\(0\)</span> 时，说明上面的区间有可能进入零球状态，也可能是一球，也挨个更新状态。</p>
-<p>这样每个区间最多只会被更新 <span class="arithmatex">\(2logn\)</span> 次，时间复杂度 <span class="arithmatex">\(O(nlogn)\)</span></p>
+<p>我们把每个观测区间挂到线段树对应的节点上，这样最多会被分成 logn 段，当一个线段树区间上蓝色球的数量变成 1 时，说明挂在上面的区间有可能进入一个蓝色球的状态，就去更新这些区间的状态，看会不会对答案产生贡献。当一个线段树区间变成 0 时，说明上面的区间有可能进入零球状态，也可能是一球，也挨个更新状态。</p>
+<p>这样每个区间最多只会被更新 2logn 次，时间复杂度 O(nlogn)</p>
 <h3 id="f-divide-the-sequence"><a href="https://codeforces.com/gym/526653/problem/F">F - Divide the Sequence</a></h3>
-<p>当 <span class="arithmatex">\(k = n\)</span> 时，答案为 <span class="arithmatex">\(\Sigma i \times a_i\)</span></p>
+<p>当 k = n 时，答案为 \Sigma i \times a_i</p>
 <p>如果要合并某两个区间，对答案的贡献就是减去一次到第二个区间的后缀和，且到每个区间的后缀和仅会被计算一次</p>
 <p>那么贪心地考虑就是每次找出最小后缀和合并，排个序就行了</p>
 <h3 id="h-stop-the-castle"><a href="https://codeforces.com/gym/526653/problem/H">H - Stop the Castle</a></h3>
@@ -1174,14 +1158,13 @@
 <p>要让每个点都相连，对于每种颜色的点至少有一个会和其他颜色的点相连，这些点就可以构成一棵最小生成树，剩下的点取最小权值往上连就好了</p>
 <h3 id="k-matrix"><a href="https://codeforces.com/gym/526653/problem/K">K - Matrix</a></h3>
 <p>简单小构造</p>
-<p>首先互不相同的那个四个位置，对应的同列或者同行的两个位置一定是相同的，就可以取四个数塞到角落，剩下同行同列的位置从 <span class="arithmatex">\(1\)</span> 到 <span class="arithmatex">\(2n - 4\)</span> 每个塞两个。</p>
-<p>这个时候还剩下一个 <span class="arithmatex">\((n - 2) \times (n - 2)\)</span> 的矩阵，把前 <span class="arithmatex">\(n - 2\)</span> 行的延伸过来就行了。</p>
-<p>这样当 <span class="arithmatex">\(1 \leq a \leq n - 2\)</span> 时，因为这一行都相等，四元组一定不符合条件</p>
-<p>当 <span class="arithmatex">\(a = n - 1\)</span> 时，如果 <span class="arithmatex">\(c \leq n - 2\)</span> ，这列最后两个值相同，也不符合条件</p>
+<p>首先互不相同的那个四个位置，对应的同列或者同行的两个位置一定是相同的，就可以取四个数塞到角落，剩下同行同列的位置从 1 到 2n - 4 每个塞两个。</p>
+<p>这个时候还剩下一个 (n - 2) \times (n - 2) 的矩阵，把前 n - 2 行的延伸过来就行了。</p>
+<p>这样当 1 \leq a \leq n - 2 时，因为这一行都相等，四元组一定不符合条件</p>
+<p>当 a = n - 1 时，如果 c \leq n - 2 ，这列最后两个值相同，也不符合条件</p>
 <p>唯一满足的四个数是角落的四个，符合题意。</p>
 <p>实际如下：</p>
-<div class="arithmatex">\[
-\begin{bmatrix}
+<div class="arithmatex">\[\begin{bmatrix}
 1 &amp; 1 &amp; 1 &amp; \cdots &amp; 1 &amp; 1 &amp; 1 \\
 2 &amp; 2 &amp; 2 &amp; \cdots &amp; 2 &amp; 2 &amp; 2 \\
 3 &amp; 3 &amp; 3 &amp; \cdots &amp; 3 &amp; 3 &amp; 3 \\
@@ -1189,14 +1172,13 @@
 n - 2 &amp; n - 2 &amp; n - 2 &amp; \cdots &amp; n - 2 &amp; n - 2 &amp; n - 2 \\
 n - 1 &amp; n &amp; n + 1 &amp; \cdots &amp; 2n - 4 &amp; 2n - 3 &amp; 2n - 2\\ 
 n - 1 &amp; n &amp; n + 1 &amp; \cdots &amp; 2n - 4 &amp; 2n - 1 &amp; 2n\\
-\end{bmatrix}
-\]</div>
+\end{bmatrix}\]</div>
 <p>我也不知道我为什么要用矩阵写，可能为了练练 <code>Latex</code> 把（</p>
 <h3 id="m-palindromic-polygon"><a href="https://codeforces.com/gym/526653/problem/M">M - Palindromic Polygon</a></h3>
 <p>区间dp</p>
-<p>先把环展开为长度 <span class="arithmatex">\(2n\)</span> 的链，然后令 <span class="arithmatex">\(f_{i, j}\)</span> 表示从第 <span class="arithmatex">\(i\)</span> 个点取到第 <span class="arithmatex">\(j\)</span> 个点围成的最大面积（需要满足 <span class="arithmatex">\(i,j\)</span> 为 回文串的一部分）</p>
-<p>然后就是按长度枚举区间，对于每个区间 <span class="arithmatex">\([i, j]\)</span> ，枚举 <span class="arithmatex">\(i\)</span> 左边的所有点，并找到 <span class="arithmatex">\(j\)</span> 后面第一个对应的相同权值相同的点，从 <span class="arithmatex">\([i, j]\)</span> 向新的区间转移，然后再枚举一下 <span class="arithmatex">\(j\)</span> 右边的点，时间复杂度 <span class="arithmatex">\(O(n^3)\)</span> </p>
-<p><span class="arithmatex">\(ans\)</span> 取计算过程中的最大值</p>
+<p>先把环展开为长度 2n 的链，然后令 f_{i, j} 表示从第 i 个点取到第 j 个点围成的最大面积（需要满足 i,j 为 回文串的一部分）</p>
+<p>然后就是按长度枚举区间，对于每个区间 [i, j] ，枚举 i 左边的所有点，并找到 j 后面第一个对应的相同权值相同的点，从 [i, j] 向新的区间转移，然后再枚举一下 j 右边的点，时间复杂度 O(n^3)</p>
+<p>ans 取计算过程中的最大值</p>
 <p>珍爱生命，远离海伦公式</p>
 </details>
 
