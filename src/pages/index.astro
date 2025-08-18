@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets'
 
-import { Quote } from 'astro-pure/advanced'
+// import { Quote } from 'astro-pure/advanced'
 import { PostPreview } from 'astro-pure/components/pages'
 import { getBlogCollection, sortMDByDate } from 'astro-pure/server'
 import { Button, Card, Icon, Label } from 'astro-pure/user'
@@ -19,6 +19,10 @@ const languages = ['C++', 'Python']
 const MAX_POSTS = 10
 const allPosts = await getBlogCollection()
 const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
+
+import { cn } from '../../packages/pure/utils'
+
+const { class: className } = Astro.props
 ---
 
 <PageLayout meta={{ title: 'Home' }} highlightColor='#659EB9'>
@@ -120,6 +124,17 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
         <!-- <SkillLayout title='Backend' skills={backend} /> -->
       </Section>
     </div>
-    <Quote class='mt-12' />
+    <!-- <Quote class='mt-12' /> -->
+  <quote-component class={cn('not-prose inline-block', className)}>
+    <div class='flex flex-row items-center gap-x-3 rounded-full border px-4 py-2 text-sm shadow-sm'>
+      <span class='relative flex items-center justify-center'>
+        <span
+          class='absolute size-2 animate-ping rounded-full border border-green-400 bg-green-400 opacity-75'
+        ></span>
+        <span class='size-2 rounded-full bg-green-400'></span>
+      </span>
+      <p id='quote-sentence' class='font-medium text-muted-foreground'>生きて、生きて、生きて、生きて、生きろ</p>
+    </div>
+</quote-component>
   </main>
 </PageLayout>

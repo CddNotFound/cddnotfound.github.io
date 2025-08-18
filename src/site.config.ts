@@ -125,6 +125,7 @@ export const integ: IntegrationUserConfig = {
     // https://github.com/lukePeavey/quotable
     server: 'https://api.quotable.io/quotes/random?maxLength=60',
     target: `(data) => data[0].content || 'Error'`
+    // target: '???'
   },
   // UnoCSS typography
   // See: https://unocss.dev/presets/typography
