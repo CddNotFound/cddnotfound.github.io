@@ -17,7 +17,7 @@ tags:
 
 落单的 $123$ 随便输出就行
 ### Code
-```C++
+```cpp
 #include<bits/stdc++.h>
 #define LL long long
 using namespace std;
@@ -83,7 +83,7 @@ int main()
 
 用到用过的数就进循环了，break输出Yes就行
 
-```C++
+```cpp
 #include<bits/stdc++.h>
 #define LL long long
 using namespace std;
@@ -140,7 +140,7 @@ int main()
 - - -
 用 $d_i$ 表示长度为 $i$ 的最小的结尾大小，对于每个 $a_i$ 二分找到它能接上的最长序列，然后更新 $d$ ，就能在 $O(nlogn)$ 内求出LIS
 ### Code
-```C++
+```cpp
 #include<bits/stdc++.h>
 #define LL long long
 using namespace std;
@@ -234,7 +234,7 @@ int main()
 
 全出现的情况下这个长度不会大于 $\Sigma n$ ，时间复杂度 $O(n)$  
 ### Code
-```C++
+```cpp
 #include<bits/stdc++.h>
 #define LL long long
 using namespace std;

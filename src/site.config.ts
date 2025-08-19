@@ -53,7 +53,7 @@ export const theme: ThemeUserConfig = {
   header: {
     menu: [
       { title: 'Blog', link: '/blog' },
-      { title: 'Template', link: '/template'},
+      { title: 'Templates', link: '/templates'},
       { title: 'Docs', link: '/docs' },
       // { title: 'Projects', link: '/projects' },
       { title: 'Links', link: '/links' },
@@ -92,12 +92,12 @@ export const theme: ThemeUserConfig = {
   },
 
   content: {
-    externalLinksContent: ' ↗',
+    externalLinksContent: '',
     /** Blog page size for pagination (optional) */
     blogPageSize: 8,
     externalLinkArrow: true, // show external link arrow
     // Currently support weibo, x, bluesky
-    share: ['weibo', 'x', 'bluesky']
+    share: []
   }
 }
 

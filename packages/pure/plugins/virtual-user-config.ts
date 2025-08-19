@@ -5,7 +5,7 @@ import type { AstroConfig, ViteUserConfig } from 'astro'
 
 import type { UserConfig } from '../types/user-config'
 
-const collectionNames = ['docs', 'blog'] as const
+const collectionNames = ['docs', 'blog', 'templates'] as const
 export type DefaultCollection = (typeof collectionNames)[number]
 export function resolveCollectionPath(collection: DefaultCollection, srcDir: URL) {
   return resolve(fileURLToPath(srcDir), `content/${collection}`)
