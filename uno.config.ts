@@ -17,10 +17,10 @@ const typographyConfig = {
       color: fg
     },
     'h1>a,h2>a,h3>a,h4>a,h5>a,h6>a': {
-      'margin-inline-start': '0.75rem',
+      'margin-inline-start': '0rem',
       color: fgMuted,
       transition: 'opacity 0.2s ease',
-      opacity: '0'
+      opacity: 1
     },
     'h1>a:focus,h2>a:focus,h3>a:focus,h4>a:focus,h5>a:focus,h6>a:focus': {
       opacity: 1

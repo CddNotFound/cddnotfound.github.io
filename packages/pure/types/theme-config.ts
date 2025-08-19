@@ -34,7 +34,7 @@ export const ThemeConfigSchema = () =>
     tagline: z.string().optional().describe('The tagline for your website.'),
 
     /** Configure the defaults for the table of contents on each page. */
-    //   tableOfContents: TableOfContentsSchema(),
+      // tableOfContents: TableOfContentsSchema(),
 
     /**
      * Specify the default language for this site.

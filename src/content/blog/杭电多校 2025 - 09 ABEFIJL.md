@@ -8,7 +8,7 @@ tags:
 ---
 <!-- more -->
 
-### [A - 数字卡片](https://acm.hdu.edu.cn/contest/problem?cid=1180&pid=1001)
+## [A - 数字卡片](https://acm.hdu.edu.cn/contest/problem?cid=1180&pid=1001)
 
 0, 4, 8 单独组成倍数
 
@@ -16,9 +16,7 @@ tags:
 
 6, 9 可以随意转换，所以哪边少放哪边，相等之后一起放
 
-#### Code
-
-##### test
+### Code
 
 ```cpp
 #include<bits/stdc++.h>
@@ -62,7 +60,7 @@ signed main()
 }
 ```
 
-### [B - 预处理器](https://acm.hdu.edu.cn/contest/problem?cid=1180&pid=1002)
+## [B - 预处理器](https://acm.hdu.edu.cn/contest/problem?cid=1180&pid=1002)
 
 参考题解
 
@@ -100,7 +98,7 @@ $a_1 << a_2 = ((a_1, 0, 0), (0, 0, a_2))$
 
 好像写得很麻烦，变成超级大分讨了
 
-#### Code
+### Code
 
 
 ```cpp
@@ -345,13 +343,13 @@ signed main()
 }
 ```
 
-### [E - 计算几何](https://acm.hdu.edu.cn/contest/problem?cid=1180&pid=1005)
+## [E - 计算几何](https://acm.hdu.edu.cn/contest/problem?cid=1180&pid=1005)
 
 通过判断对两条边 ($p_{i - 1} \to p_i, p_i \to p_{i + 1}$) 叉乘结果的正负，可以判断这个钉子是处于当前方向的左边还是右边，结果为 0 则说明这个点的角度为 180° 不需要放置钉子
 
 接下来只需要判断左边和右边哪边在图形内侧，假设我们用一个最小的矩形将整个图形围起来，与矩形接触，也就是最外侧的点构成的角一定是一个凸角（或者平角），这个位置放置的钉子一定处于图形内侧，找到任意一个点（不能是平角），这个点放钉子的那一侧对应的答案就是 `YES`
 
-#### Code
+### Code
 
 ```cpp
 #include<bits/stdc++.h>
@@ -426,7 +424,7 @@ signed main()
 }
 ```
 
-### [F - 括号匹配](https://acm.hdu.edu.cn/contest/problem?cid=1180&pid=1006)
+## [F - 括号匹配](https://acm.hdu.edu.cn/contest/problem?cid=1180&pid=1006)
 
 前置芝士：马拉车
 
@@ -434,7 +432,7 @@ signed main()
 
 用两个 `set` 分别保存所有 `()` 中 `(` 和 `)` 的位置，然后用马拉车计算出以每个字符为中心的最长回文串半径 $p_i$ ，在 `set` 中找到离中心最近的括号（在中心左侧的 `(` 或在中心右侧的 `)`）的距离，这个中心的贡献就是 $\frac{p_i - dis}{2}$
 
-#### Code
+### Code
 
 ```cpp
 #include<bits/stdc++.h>
@@ -519,7 +517,7 @@ signed main()
 }
 ```
 
-### [I - 乘法逆元](https://acm.hdu.edu.cn/contest/problem?cid=1180&pid=1009)
+## [I - 乘法逆元](https://acm.hdu.edu.cn/contest/problem?cid=1180&pid=1009)
 
 将原式乘开得到：
 
@@ -536,12 +534,14 @@ $p$ 为质数， $i \times inv(i)$ 两两对称，所以 $a = inv(i) \oplus (p -
 
 从 0 开始每 4 个数为一组，异或和为 0 
 
-$$b = \begin{cases}
+$$
+b = \begin{cases}
 x & x = 4t\\
 1 & x = 4t + 1\\
 x + 1 & x = 4t + 2\\
 0 & x = 4t + 3
-\end{cases}$$
+\end{cases}
+$$
 
 对第三部分打表发现，当 $p\ \%\ 4 = 3$ 时，$c = p$，否则 $c = p - 1$
 
@@ -555,7 +555,7 @@ x + 1 & x = 4t + 2\\
 
 惨痛教训：$(p - 1) * inv(p - 1)$ 会溢出 `long long`，记得开 `i128`
 
-#### Code
+### Code
 
 ```cpp
 #include<bits/stdc++.h>
@@ -662,7 +662,7 @@ signed main()
 }
 ```
 
-### [J - 阿斯蒂芬](https://acm.hdu.edu.cn/contest/problem?cid=1180&pid=1010)
+## [J - 阿斯蒂芬](https://acm.hdu.edu.cn/contest/problem?cid=1180&pid=1010)
 
 笑点解析：$1 \leq a_i \leq n$ 与 $a_i \leq 2$ 与 $0 \leq a_i \leq 2$
 
@@ -672,7 +672,7 @@ signed main()
 
 按照拓扑顺遍历即可，遇到大小大于 2 并且有能量或者有能力输入的点打上标记，传递给下游，最终答案为打上标记的点的大小和
 
-#### Code
+### Code
 
 ```cpp
 #include<bits/stdc++.h>
@@ -816,11 +816,11 @@ signed main()
 }
 ```
 
-### [L - 测试若歪](https://acm.hdu.edu.cn/contest/problem?cid=1180&pid=1012)
+## [L - 测试若歪](https://acm.hdu.edu.cn/contest/problem?cid=1180&pid=1012)
 
 将一血顺序和通过量顺序挨个比较，题目不限制 $\sum n$ 的范围，用 `map` 保存即可
 
-#### Code
+### Code
 
 ```cpp
 #include<bits/stdc++.h>
