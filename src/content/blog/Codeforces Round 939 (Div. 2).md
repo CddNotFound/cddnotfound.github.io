@@ -11,13 +11,13 @@ tags:
 
 A-C全是简单结论题，题又长读半天，感觉挺没意思的（
 
-### [A.Nene's Game](https://codeforces.com/contest/1956/problem/A)
+## [A.Nene's Game](https://codeforces.com/contest/1956/problem/A)
 
 只要人数大于 $a_1$ 就会一直进行，所以答案是 $min(a_1 - 1, n_i)$
 
 当然直接模拟也不是不可以（
 
-#### Code
+### Code
 
 ```cpp
 int main()
@@ -38,13 +38,13 @@ int main()
 }
 ```
 
-### [B. Nene and the Card Game](https://codeforces.com/contest/1956/problem/B)
+## [B. Nene and the Card Game](https://codeforces.com/contest/1956/problem/B)
 
 注意到两人手中凑不成对牌的数量相等，所以我们每打出一张这种牌，`nene` 就打同样的牌，这部分牌的分会全被 `nene` 拿走
 
 剩下的相等的牌的分必定能拿到，答案就是这部分得分
 
-#### Code
+### Code
 
 ```cpp
 int main()
@@ -64,7 +64,7 @@ int main()
 }
 ```
 
-### [C. Nene's Magical Matrix](https://codeforces.com/contest/1956/problem/C)
+## [C. Nene's Magical Matrix](https://codeforces.com/contest/1956/problem/C)
 
 手搓几个小数据就能发现最优解是 $\sum_{i = 1} ^ {n} i \times (2 \times i - 1)$    
 
@@ -74,7 +74,7 @@ int main()
 
 一共操作 $2n - 1$ 次
 
-#### Code
+### Code
 
 ```cpp
 int main()
@@ -107,7 +107,7 @@ int main()
 }
 ```
 
-### [D. Nene and the Mex Operator](https://codeforces.com/contest/1956/problem/D)
+## [D. Nene and the Mex Operator](https://codeforces.com/contest/1956/problem/D)
 
 一开始 $ans$ 数组只开到 $25$ 痛吃三次罚时， 不然该直接上紫的（
 
@@ -127,7 +127,7 @@ int main()
 
 实际上翻了下数据，稍微大点的数据这个操作数都比 $std$ 少（
 
-#### Code
+### Code
 
 ```cpp
 #include<bits/stdc++.h>
@@ -220,7 +220,7 @@ int main()
 
 ---
 
-### [E1. Nene vs. Monsters (Easy Version)](https://codeforces.com/contest/1956/problem/E1)
+## [E1. Nene vs. Monsters (Easy Version)](https://codeforces.com/contest/1956/problem/E1)
 
 `E1 E2` 参考的 Aicu 的思路
 
@@ -240,7 +240,7 @@ $1000$ 次循环后 $z$ 减少 $\sum_{i = 1} ^ {1000} i = \frac {1000 ^ 2 + 1000
 
 那么对于段长为 $2$ 的， 把后者血量清零即可
 
-#### Code
+### Code
 
 ```cpp
 #include<bits/stdc++.h>
@@ -294,7 +294,7 @@ int main()
 }
 ```
 
-### [E2. Nene vs. Monsters (Hard Version)](https://codeforces.com/contest/1956/problem/E2)
+## [E2. Nene vs. Monsters (Hard Version)](https://codeforces.com/contest/1956/problem/E2)
 
 暴力跑 $2000$ 次后， 剩下的段长最长为 $3$
 
@@ -312,7 +312,7 @@ $2000$ 次循环后 $z$ 减少 $t \times (\sum_{i = 1} ^ {t} i) - \sum_{i = 1} ^
 
 段长为 $2$ 的依旧是将后者清零
 
-#### Code
+### Code
 
 ```cpp
 #include<bits/stdc++.h>
@@ -379,13 +379,13 @@ int main()
 }
 ```
 
-### [F. Nene and the Passing Game](https://codeforces.com/contest/1956/problem/F)
+## [F. Nene and the Passing Game](https://codeforces.com/contest/1956/problem/F)
 
 官方题解 $O(n)$ 的合并方法是真巧妙，建议去看看
 
 ---
 
-#### 这是我的错解
+### 这是我的错解
 
 题目并没有对 $m$ 的大小进行限制，所以球可以多次经过同一个人，也就是说一次可以评估整个联通块内的人
 
@@ -393,7 +393,7 @@ int main()
 
 但是很不幸的是空间和时间都会爆（虽然期望时间复杂度是 $O(nlogn)$
 
-#### 能过的解
+### 能过的解
 
 依旧是人对地块连边的思想，当一个位置同时存在左手区间和右手区间时，这些人可以并入同一个联通块
 
@@ -405,7 +405,7 @@ int main()
 
 感觉瓶颈在排序（
 
-#### Code
+### Code
 
 ```cpp
 #include<bits/stdc++.h>
