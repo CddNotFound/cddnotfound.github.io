@@ -9,7 +9,7 @@ tags:
 
 <!-- more -->
 
-A-C全是简单结论题，题又长读半天，感觉挺没意思的（
+A - C 全是简单结论题，题又长读半天，感觉挺没意思的（
 
 ## [A.Nene's Game](https://codeforces.com/contest/1956/problem/A)
 
