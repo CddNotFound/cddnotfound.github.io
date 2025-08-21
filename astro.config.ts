@@ -26,6 +26,7 @@ import config from './src/site.config.ts'
 export default defineConfig({
   // Top-Level Options
   site: 'https://cddnotfound.github.io',
+  base: '/cddnotfound.github.io',
   // base: '/docs',
   // trailingSlash: 'never',
 
