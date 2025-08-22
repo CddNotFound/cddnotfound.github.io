@@ -1,6 +1,6 @@
 ---
-title: "'Codeforces Round 1043 (Div. 3) A - G'"
-description: "''"
+title: 'Codeforces Round 1043 (Div. 3) A - G'
+description: ''
 publishDate: 2025-08-23
 tags:
   - ACM
