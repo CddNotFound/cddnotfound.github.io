@@ -5,7 +5,7 @@ tags:
   - ACM
   - CF
 publishDate: 2025-08-26
-heroImage: {src: './cover.jpeg', color: '#e3e17aff' }
+heroImage: {src: './cover.jpeg', color: '#dedc79ff' }
 ---
 ## [A - Redstone?](https://codeforces.com/contest/2133/problem/A)
 
@@ -353,7 +353,7 @@ signed main()
 
 令 $dp_i$ 表示引爆第 $i$ 只 creeper ，并且保证前 $i$ 只全被炸死的最少次数，转移方程如下：
 
-$$dp_i = \min_{j < i, \left|i - j\right| \geq min(e_i, e_j)}(dp_j) + 1$$
+$$dp_i = \min\limits_{j < i, \left|i - j\right| \geq min(e_i, e_j)}(dp_j) + 1$$
 
 即只要两只 creeper 不会互相炸到就可以进行转移。
 
