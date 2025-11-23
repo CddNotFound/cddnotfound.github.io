@@ -10,21 +10,20 @@ const headings = [
   { depth: 2, slug: 'tools', text: 'Tools' },
   { depth: 2, slug: 'social-networks', text: 'Social Networks' },
   { depth: 2, slug: 'gossips', text: 'Gossips' },
-  { depth: 2, slug: 'about-blog', text: 'About Blog' }
+  { depth: 2, slug: 'trivia', text: 'Trivia' },
+  // { depth: 2, slug: 'about-blog', text: 'About Blog' }
 ]
 ---
 
 <PageLayout title='About' {headings} info='/about'>
-  <p>Developer / Designer</p>
+  <p>Cdd / Dt3DN32PG2</p>
   <p>
-    Lorem ipsum dolor sit amet, vidit suscipit at mei. Quem denique mea id. Usu ei regione indoctum
-    dissentiunt, cu meliore fuisset mei, vel quod voluptua ne. Ex dicat impedit mel, at eum oratio
-    possit voluptatum.
+    todo~
   </p>
   <p>
-    My motto: Stay hungry, Stay foolish. <Spoiler>这里可以夹私货，比如为什么要演奏春日影！</Spoiler>
+    <Spoiler>希望不会变成无聊的大人</Spoiler>
   </p>
-  <Button title='Sponsor Me' class='w-fit' href='/projects#sponsorship' style='ahead' />
+  <!-- <Button title='Sponsor Me' class='w-fit' href='/projects#sponsorship' style='ahead' /> -->
 
   {/* general-talk */}
   <h2 id='hobbies'>Hobbies</h2>
@@ -38,8 +37,8 @@ const headings = [
     <li>Impetus fuisset ullamcorper pri cu, his posse iisque ad, aliquam honestatis usu id.</li>
   </ul>
 
-  {/* tools */}
-  <h2 id='tools'>Tools</h2>
+  <!-- {/* tools */} -->
+  <!-- <h2 id='tools'>Tools</h2>
   <p>Current support tools as follow:</p>
   <ToolSection
     class='mb-5'
@@ -154,59 +153,66 @@ const headings = [
         icon: import('@/assets/tools/windows11.svg?raw')
       }
     ]}
-  />
+  /> -->
 
   {/* social-networks */}
   <h2 id='social-networks'>Social Networks</h2>
   <p>
-    Lorem ipsum dolor sit amet, vidit suscipit at mei. Quem denique mea id. Usu ei regione indoctum
-    dissentiunt, cu meliore fuisset mei, vel quod voluptua ne.
+
+    <!-- Lorem ipsum dolor sit amet, vidit suscipit at mei. Quem denique mea id. Usu ei regione indoctum -->
+    <!-- dissentiunt, cu meliore fuisset mei, vel quod voluptua ne. -->
   </p>
   <Substats
     stats={[
       {
         platform: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/cworld1',
+        link: 'https://github.com/cddnotfound',
         text: 'followers',
-        api: 'github/cworld1'
+        // api: 'github/cddnotfound'
       },
       {
-        platform: 'Telegram',
-        icon: 'telegram',
-        color: '#2ca5e0',
-        link: 'https://t.me/cworld0_cn',
+        platform: 'Zhihu',
+        icon: 'zhihu',
+        color: '#0084ff',
+        link: 'https://www.zhihu.com/people/cddnoutfound',
         text: 'subscribers',
-        api: 'telegram/cworld0_cn'
+        // api: 'zhihu/cddnoutfound'
       },
       {
-        platform: 'Weibo',
-        icon: 'weibo',
-        color: '#e71f19',
-        link: 'https://weibo.com/cworld0',
+        platform: 'Bilibili',
+        icon: 'bilibili',
+        color: '#ff6699',
+        link: 'https://space.bilibili.com/33126227',
         text: 'followers',
-        api: 'weibo/5501674056'
+        // api: 'https://api.swo.moe/stats/bilibili/33126227'
       },
       {
         platform: 'Steam',
         icon: 'steam',
         color: '#50769d',
-        link: 'https://steamcommunity.com/id/cworld',
+        link: 'https://steamcommunity.com/id/kkcdd',
         text: 'games',
-        api: 'steamgames/76561199021278120'
+        api: 'steamgames/76561198402454954'
       }
     ]}
   />
 
   {/* gossips */}
   <h2 id='gossips'>Gossips</h2>
-  <Collapse title='Lorem ipsum'>
-    Lorem ipsum dolor sit amet, vidit suscipit at mei. Quem denique mea id. Usu ei regione indoctum
-    dissentiunt, cu meliore fuisset mei, vel quod voluptua ne. Ex dicat impedit mel, at eum oratio
-    possit voluptatum.
+  <Collapse title='なにこれ'>
+      <p>虽然 1 + 1 = 2 ，但是我们知道二次函数是抛物线</p>
+      <p>也就是说，如果我将一杯水倒进大海里，那么我杯子里就没有水了</p>
+      <p>生活也是一样的道理</p>
+      <p>拧毛巾的时候，别忘了拿上你的番茄，因为毛巾里可以挤出沙拉酱</p>
+      <p>或许山楂是酸的，但是阿尔卑斯是甜的</p>
+      <p>我喜欢山楂，我喜欢阿尔卑斯</p>
+      <p>我喜欢玉桂树，因为它总能让我想起玉桂狗</p>
+      <p><Spoiler>◼️◼️◼️◼️ ◼️◼️◼️◼️◼️</Spoiler></p>
+      <p>--<Spoiler>◼️◼️◼️◼️◼️◼️◼️◼️◼️◼️</Spoiler></p>
   </Collapse>
 
-  {/* about-blog */}
+  <!-- {/* about-blog */}
   <h2 id='about-blog'>About Blog</h2>
   <p>Website history:</p>
   <Timeline
@@ -245,7 +251,7 @@ const headings = [
     <li>
       CI/CD: <a href='https://vercel.com/workflow' target='_blank'>Vercel Workflow</a>
     </li>
-    <!-- <li>Resources speedup: <a href='https://cdn.cbd.int/' target='_blank'>CBD CDN</a></li> -->
+    <li>Resources speedup: <a href='https://cdn.cbd.int/' target='_blank'>CBD CDN</a></li>
     <li>Comment system: <a href='https://waline.js.org' target='_blank'>Waline</a></li>
     <li>
       Visits: <a href='https://supabase.com/' target='_blank'>Supabase</a> +
@@ -258,4 +264,16 @@ const headings = [
     </li>
   </ul>
   <Comment slot='bottom' />
-</PageLayout>
+</PageLayout> -->
+
+  {/* general-talk */}
+  <h2 id='trivia'>Trivia</h2>
+    <ul>
+      <li>Lorem ipsum dolor sit amet, vidit suscipit at mei.</li>
+      <li>
+        Quem denique mea id. Usu ei regione indoctum dissentiunt, cu meliore fuisset mei, vel quod
+        voluptua ne.
+      </li>
+      <li>有的时候消息会拖很久才回</li>
+      <li>Impetus fuisset ullamcorper pri cu, his posse iisque ad, aliquam honestatis usu id.</li>
+    </ul>
